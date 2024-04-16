@@ -1,0 +1,40 @@
+
+<div class="table-scroll-temp"
+     infinite-scroll
+     [infiniteScrollDistance]="2"
+     [infiniteScrollThrottle]="150"
+     (scrolled)="onScroll()">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table-scroll">
+  
+    
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+  
+    
+    <ng-container matColumnDef="employee name">
+      <th mat-header-cell *matHeaderCellDef>Employee Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.employee_name}} </td>
+    </ng-container>
+  
+    
+    <ng-container matColumnDef="employee salary">
+      <th mat-header-cell *matHeaderCellDef> Salary </th>
+      <td mat-cell *matCellDef="let element"> {{element.employee_salary}} </td>
+    </ng-container>
+    <ng-container matColumnDef="employee age">
+        <th mat-header-cell *matHeaderCellDef> Age </th>
+        <td mat-cell *matCellDef="let element"> {{element.employee_age}} </td>
+      </ng-container>
+      
+      <ng-container matColumnDef="profile image">
+        <th mat-header-cell *matHeaderCellDef> Image </th>
+        <td mat-cell *matCellDef="let element"> {{element.profile_image}} </td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  </div>

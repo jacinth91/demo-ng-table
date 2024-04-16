@@ -1,0 +1,24 @@
+.mat-cell, .mat-header-cell {
+    margin-right: 8px; 
+}
+.mat-cell, .mat-header-cell {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.mat-cell, .mat-header-cell {
+    border-right: 8px solid transparent; 
+}
+.mat-column-id { 
+    flex: 0 0 120px; 
+}
+.mat-column-name {
+    flex: 0 0 200px;
+}
+.mat-column-age {
+    flex: 0 0 80px;
+}
+.table-scroll {
+    width: 100%; 
+    height: 600px; 
+    overflow: auto; 
+  }
